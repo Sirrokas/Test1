@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="teststyle.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">Bootstrap</a>
+  </div>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#about-us">Home<span class="sr-only">(current)</span></a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li class="active"><a href="#">Contact</a></li>
+      <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog<span class="caret"></span></a>
+    </li>
+  </ul>
+  </div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+</nav>
+<div class="container" id="contact">
+  <div class="page-header" style="margin-top: 70px">
+    <h1>Contact<small>  Subheading</small></h1>
+  </div>
+  <ol class="breadcrumb" style="margin-top: 24px">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Contact</a></li>
+  </ol>
+  <!-- Add Google Maps -->
+  <div class="row">
+  <div class="col-lg-8" id="googleMap" style="height:300px;width:60%;"></div>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+  <div class="col-lg-4" style="margin-top: 20px">
+    <p>Contact us and we'll get back to you within 24 hours.</p>
+    <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+    <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+    <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+    <p><i class="fa fa-facebook-official" aria-hidden="true"></i></p>
+  </div>
+  </div>
+
+  <div class="container-fluid bg-grey">
+  <h2 class="text-left">Send us a Message</h2>
+  <div class="row">
+
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <h4>Full Name:</h4>
+          <input class="form-control" id="name" name="name" type="text" required>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-sm-6 form-group">
+          <h4>Phone Number:</h4>
+          <input class="form-control" id="number" name="number" type="number" required>
+        </div>
+      </div>
+        <div class="row">
+        <div class="col-sm-6 form-group">
+          <h4>Email Adress:</h4>
+          <input class="form-control" id="email" name="email" type="email" required>
+        </div>
+      </div>
+        <h4>Message:</h4>
+      <textarea class="form-control" id="comments" name="comments" rows="5" required style="resize:none"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-primary pull-left" type="submit">Send Message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer" id="footer" style="margin: 60px 0px">
+  <div class="container text-left">
+    <a href="#">Copyright @ Test 2017</a>
+  </div>
+</div>
+
+  </body>
+</html>
