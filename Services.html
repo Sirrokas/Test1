@@ -2,40 +2,81 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta charset="utf-8">
     <title>Services</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="teststyle.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <title></title>
+    <link rel="stylesheet" href="/.css/teststyle.css">
   </head>
-  <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-    <div class="navbar-header">
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" href="#">Bootstrap</a>
-  </div>
-  <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#home">Home<span class="sr-only">(current)</span></a></li>
-      <li><a href="#about-us">About</a></li>
-      <li class="active"><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-      <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog<span class="caret"></span></a>
-    </li>
-  </ul>
-  </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-  </nav>
+  <body style="padding-top:50px;">
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="Home.html">Start Bootstrap</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#!">1 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#!">2 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#">3 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#!">4 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#!">Single Portfolio Item</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">404</a>
+                            </li>
+                            <li>
+                                <a href="#">Pricing Table</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
   <div class="container" id="services">
     <div class="page-header" style="margin-top: 70px">
       <h1>Services<small>  Subheading</small></h1>
@@ -57,45 +98,54 @@
     </div>
         <div class="row">
         <div class="col-md-3">
-          <div class="thumbnail">
-            <i class="fa fa-tree fa-5x" aria-hidden="true" style="margin: 0px 90px"></i>
-            <div class="caption" style="text-align:center">
+          <div class="panel panel-default text-center">
+            <div class="panel-heading">
+              <h4><i class="fa fa-tree fa-5x" aria-hidden="true"></i></h4>
+            </div>
+            <div class="panel-body">
               <h3>Service One</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <p><a href="#" class="btn btn-primary" role="button">Learn More</a></p>
             </div>
-          </div>
+           </div>
         </div>
         <div class="col-md-3">
-          <div class="thumbnail">
-            <i class="fa fa-car fa-5x" aria-hidden="true" style="margin: 0px 90px"></i>
-            <div class="caption" style="text-align:center">
+          <div class="panel panel-default text-center">
+            <div class="panel-heading">
+              <h4><i class="fa fa-podcast fa-5x" aria-hidden="true"></i></h4>
+            </div>
+            <div class="panel-body">
               <h3>Service Two</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <p><a href="#" class="btn btn-primary" role="button">Learn More</a></p>
             </div>
-          </div>
+           </div>
         </div>
         <div class="col-md-3">
-          <div class="thumbnail">
-            <i class="fa fa-plug fa-5x" aria-hidden="true" style="margin: 0px 90px"></i>
-            <div class="caption" style="text-align:center">
+          <div class="panel panel-default text-center">
+            <div class="panel-heading">
+              <h4><i class="fa fa-grav fa-5x" aria-hidden="true"></i></h4>
+            </div>
+            <div class="panel-body">
               <h3>Service Three</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <p><a href="#" class="btn btn-primary" role="button">Learn More</a></p>
             </div>
-          </div>
+           </div>
         </div>
         <div class="col-md-3">
-          <div class="thumbnail">
-            <i class="fa fa-tachometer fa-5x" aria-hidden="true" style="margin: 0px 90px"></i>
-            <div class="caption" style="text-align:center">
+          <div class="panel panel-default text-center">
+            <div class="panel-heading">
+              <h4><i class="fa fa-cab fa-5x" aria-hidden="true"></i></h4>
+            </div>
+            <div class="panel-body">
               <h3>Service Four</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <p><a href="#" class="btn btn-primary" role="button">Learn More</a></p>
             </div>
-          </div>
+           </div>
         </div>
+
         </div>
         <div class="row">
           <div class="col-md-12">
@@ -103,17 +153,22 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-12">
-        <ul class="nav nav-tabs">
-          <li role="presentation" class="active"><a href="#">Service One</a></li>
-          <li role="presentation"><a href="#">Service Two</a></li>
-          <li role="presentation"><a href="#">Service Three</a></li>
-          <li role="presentation"><a href="#">Service Four</a></li>
-        </ul>
-        <h4>Service One</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <ul class="nav nav-tabs" role="tablist">
+           <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-check-square" aria-hidden="true"></i>  Service One</a></li>
+           <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-check-square" aria-hidden="true"></i>  Service Two</a></li>
+           <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-check-square" aria-hidden="true"></i>  Service Three</a></li>
+           <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab"><i class="fa fa-check-square" aria-hidden="true"></i>  Service Four</a></li>
+         </ul>
+
+         <!-- Tab panes -->
+         <div class="tab-content">
+           <div role="tabpanel" class="tab-pane active" id="home">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+           <div role="tabpanel" class="tab-pane" id="profile">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+           <div role="tabpanel" class="tab-pane" id="messages">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+           <div role="tabpanel" class="tab-pane" id="settings">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+         </div>
         </div>
-        </div>
+
         <div class="row">
           <div class="col-md-12">
             <h1>Service List</h1>
@@ -121,17 +176,17 @@
         </div>
         <div class="row">
         <div class="col-sm-4">
-          <i class="fa fa-bandcamp fa-5x fa-pull-left" aria-hidden="true"></i>
+          <a href="#"><i class="fa fa-bandcamp fa-5x fa-pull-left"></i> </a>
           <h4>Service One</h4>
           <p>Our vision Lorem ipsum..</p>
         </div>
         <div class="col-sm-4">
-          <i class="fa fa-microchip fa-5x fa-pull-left" aria-hidden="true"></i>
+          <a href="#"><i class="fa fa-microchip fa-5x fa-pull-left"></i>  </a>
           <h4>Service Two</h4>
           <p>Our vision Lorem ipsum..</p>
         </div>
         <div class="col-sm-4">
-          <i class="fa fa-handshake-o fa-5x fa-pull-left" aria-hidden="true"></i>
+          <a href="#"><i class="fa fa-handshake-o fa-5x fa-pull-left" aria-hidden="true"></i> </a>
           <h4>Service Three</h4>
           <p>Our vision Lorem ipsum..</p>
         </div>
@@ -139,17 +194,17 @@
        <br>
         <div class="row">
         <div class="col-sm-4">
-          <i class="fa fa-wifi fa-5x fa-pull-left" aria-hidden="true"></i>
+          <a href="#"><i class="fa fa-wifi fa-5x fa-pull-left"></i> </a>
           <h4>Service Four</h4>
           <p>Our vision Lorem ipsum..</p>
         </div>
         <div class="col-sm-4">
-          <i class="fa fa-tv fa-5x fa-pull-left" aria-hidden="true"></i>
+          <a href="#"><i class="fa fa-tv fa-5x fa-pull-left"></i> </a>
           <h4>Service Five</h4>
           <p>Our vision Lorem ipsum..</p>
         </div>
         <div class="col-sm-4">
-          <i class="fa fa-unlock fa-5x fa-pull-left" aria-hidden="true"></i>
+          <a href="#"><i class="fa fa-unlock fa-5x fa-pull-left" aria-hidden="true"></i> </a>
           <h4>Service Six</h4>
           <p>Our vision Lorem ipsum..</p>
         </div>
@@ -157,28 +212,35 @@
        <br>
         <div class="row">
         <div class="col-sm-4">
-          <i class="fa fa-truck fa-5x fa-pull-left" aria-hidden="true"></i>
+          <a href="#"><i class="fa fa-truck fa-5x fa-pull-left" aria-hidden="true"></i> </a>
           <h4>Service Seven</h4>
           <p>Our vision Lorem ipsum..</p>
         </div>
         <div class="col-sm-4">
-          <i class="fa fa-tty fa-5x fa-pull-left" aria-hidden="true"></i>
+          <a href="#"><i class="fa fa-tty fa-5x fa-pull-left" aria-hidden="true"></i> </a>
           <h4>Service Eight</h4>
           <p>Our vision Lorem ipsum..</p>
         </div>
         <div class="col-sm-4">
-          <i class="fa fa-wrench fa-5x fa-pull-left" aria-hidden="true"></i>
+          <a href="#"><i class="fa fa-wrench fa-5x fa-pull-left" aria-hidden="true"></i> </a>
           <h4>Service Nine</h4>
           <p>Our vision Lorem ipsum..</p>
         </div>
        </div>
-
+       <hr>
+       <footer>
+         <div class="row">
+           <div class="col-lg-12" style="padding-bottom: 20px">
+             Copyright @ Your website 2017
+           </div>
+         </div>
+       </footer>
      </div>
-     <div class="footer" id="footer" style="margin: 60px">
-       <div class="container text-left">
-         <a href="#">Copyright @ Test 2017</a>
-       </div>
-     </div>
-
+     <script
+     src="https://code.jquery.com/jquery-3.2.1.js"
+     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+     crossorigin="anonymous"></script>
+     <!-- Latest compiled and minified JavaScript -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>
